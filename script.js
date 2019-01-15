@@ -6,4 +6,10 @@ div.appendChild(span);
 const spnText = document.querySelector(".text");
 const txt = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur rerum ad? Eum quos reprehenderit minima! Fugit, omnis! Eveniet repellendus et iure deserunt iusto quas in est odit, labore optio? END'
 
-const index = setInterval(addLetter, 100);
+let txtIndex = 0;
+const addLetter = () => {
+    spnText.textContent += txt[txtIndex];
+    txtIndex++;
+    if (txtIndex === txt.length) clearInterval(index)
+}
+const index = setInterval(addLetter, 50);
