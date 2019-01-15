@@ -3,6 +3,11 @@ document.body.appendChild(div);
 const span = document.createElement("span");
 span.classList.add("text");
 div.appendChild(span);
+const span2 = document.createElement("span");
+span2.classList.add("cursor");
+span2.innerHTML = "|"
+div.appendChild(span2)
+const spnCursor = document.querySelector(".cursor")
 const spnText = document.querySelector(".text");
 const txt = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur rerum ad? Eum quos reprehenderit minima! Fugit, omnis! Eveniet repellendus et iure deserunt iusto quas in est odit, labore optio? END'
 
@@ -12,4 +17,9 @@ const addLetter = () => {
     txtIndex++;
     if (txtIndex === txt.length) clearInterval(index)
 }
+
+const cursorAnim = () => {
+    
+}
+
 const index = setInterval(addLetter, 50);
