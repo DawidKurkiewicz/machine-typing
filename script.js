@@ -1,0 +1,5 @@
+const div = document.createElement("div")
+document.body.appendChild(div)
+const span = document.createElement("span")
+span.classList.add("text")
+div.appendChild(span)
