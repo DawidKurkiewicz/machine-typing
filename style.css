@@ -9,6 +9,6 @@ div {
     opacity: 0;
     transition: .2s
 }
-.cursor-active {
+.cursor.active {
     opacity: 1;
 }

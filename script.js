@@ -19,7 +19,8 @@ const addLetter = () => {
 }
 
 const cursorAnim = () => {
-    
+spnCursor.classList.toggle("active")
 }
 
 const index = setInterval(addLetter, 50);
+setInterval(cursorAnim, 400)
