@@ -9,7 +9,7 @@ span2.innerHTML = "|"
 div.appendChild(span2)
 const spnCursor = document.querySelector(".cursor")
 const spnText = document.querySelector(".text");
-const txt = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur rerum ad? Eum quos reprehenderit minima! Fugit, omnis! Eveniet repellendus et iure deserunt iusto quas in est odit, labore optio? END'
+const txt =  " Hello im Dawid Kurkiewicz, im Front-End Developer. Im already working in Billennium, im programist for about one year"
 
 let txtIndex = 0;
 const addLetter = () => {
